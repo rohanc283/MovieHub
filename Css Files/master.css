@@ -1,0 +1,182 @@
+body {
+    background-color: #0e1538;
+    height: 100%;
+}
+
+
+header {
+    display: flex;
+    color: wheat;
+
+
+}
+
+header nav {
+    position: relative;
+    left: 10%;
+    display: flex;
+
+
+}
+
+header .logobox img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+header .logobox h1 {
+    background: -webkit-linear-gradient(45deg, #00ccff, yellow, green, #d400d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logobox {
+    position: relative;
+    left: 2%;
+    display: flex;
+
+}
+
+header .signbox img {
+    height: 60px;
+    width: 70px;
+    border-radius: 30px;
+}
+
+header .signbox h4 {
+    position: relative;
+    margin-left: 5px;
+}
+
+
+header .signbox {
+    position: relative;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+
+}
+
+
+header nav ul li a:before,
+header nav ul li a:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #f00;
+    transition: 0.5s;
+    inset: -3px;
+}
+
+header nav ul li a:nth-child(1):before,
+header nav ul li a:nth-child(1):after {
+    background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+}
+
+header nav ul li a span {
+    position: relative;
+    top: 0;
+    padding: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+.moviebox {
+    height: 100%;
+    width: 100%;
+}
+
+.moviebox video {
+    position: relative;
+    margin: auto;
+    width: 100%;
+
+    height: 500px;
+    border: 2px solid aqua;
+
+}
+
+.moviebox .infobox {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.moviebox h2 {
+    font-size: 4em;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.moviebox p {
+    text-align: center;
+    color: aqua;
+    position: relative;
+    margin-left: 100px;
+}
+
+.favouritebox {
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.favouritebox h3 {
+    color: red;
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 10px;
+}
+
+.favouritebox img {
+    height: 50px;
+    width: 70px;
+    position: relative;
+    margin-top: -10px;
+    animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {}
+
+    100% {
+        transform: scale(1.5);
+    }
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css Files/main.css">
+</head>
+
+<body>
+    <div class="squarebox">
+    </div>
+    <section>
+        <div class="imgbox">
+            <img src="/Images/backgroundLogin.jpg" alt="">
+        </div>
+        <div class="effect-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="contentbox">
+
+
+            <div class="formbox" id="loginform">
+                <h2>Login</h2>
+                <form action="Home.html" name="loginformm" onsubmit="return validateLogin()">
+                    <div class="inputbox">
+                        <span>Username</span>
+                        <input type="text" name="uname1" required>
+                        <span id="suname1"></span>
+                    </div>
+                    <div class="inputbox">
+                        <span>Password</span>
+                        <input type="password" name="password1" required>
+                        <span id="spass1"></span>
+                    </div>
+
+                    <div class="rememberme">
+                        <label for="remember"><input type="checkbox" id="remember" name="remember">Remember Me</label>
+                    </div>
+                    <div class="rememberme">
+                        <label>Forgot Password ?</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Sign In">
+                    </div>
+                </form>
+
+
+
+                <div class="inputbox">
+                    <p>Dont have an account?<button href="" id="signup">Create Account</button></p>
+                </div>
+
+                <h3>Login Using Social Media</h3>
+                <ul class="social">
+                    <li><img src="/Images/gmailicon.png" alt="gmail"></li>
+                    <li><img src="/Images/fbicon.png" alt="facebook"></li>
+                    <li><img src="/Images/twittericon.png" alt="twitter"></li>
+                </ul>
+            </div>
+
+
+            <div class="container" id="container">
+                <h2 class="title">Registration</h2>
+                <div class="content">
+                    <form name="myForm" onsubmit="return false">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name</span>
+                                <input type="text" placeholder="Enter your name" name="fname" required>
+
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Username</span>
+                                <input type="text" placeholder="Enter your username" onkeyup="validateName()"
+                                    name="uname" required>
+                                <span id="sname"></span>
+
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input type="text" placeholder="Enter your email" onkeyup="validateEmail()" id="email"
+                                    required>
+                                <span id="semail"></span>
+
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Phone Number</span>
+                                <input type="number" placeholder="Enter your number" name="phone"
+                                    onkeyup="validatePhone()" required>
+                                <span id="sphone"></span>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Password</span>
+                                <input type="text" name="password" placeholder="Enter your password"
+                                    onkeyup="checkPass()" required>
+                                <span id="spass"></span>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Confirm Password</span>
+                                <input type="password" placeholder="Confirm your password" onkeyup="validatePass()"
+                                    name="cpassword" required>
+                                <span id="cpass"></span>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Register" id="submitBtn" onclick="validateAll()">
+                        </div>
+                    </form>
+                </div>
+                <div class="input-box">
+                    <p>Already Registered?<button id="register">Log In</button></p>
+                </div>
+            </div>
+
+            <div class="success" id="success">
+                <h2>You Have Been Registered Sucessfully</h2>
+                <button id="go">Login Now</button>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <script src="/Javascript Files/main.js">
+
+    </script>
+
+</body>
+
+</html>

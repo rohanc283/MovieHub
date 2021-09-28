@@ -1,0 +1,387 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    background: #0e1538;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    color: wheat;
+
+
+}
+
+header nav {
+    position: relative;
+    left: 10%;
+    display: flex;
+
+
+}
+
+header .logobox img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+
+}
+
+header .logobox h1 {
+    background: -webkit-linear-gradient(45deg, #00ccff, yellow, green, #d400d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logobox {
+    position: relative;
+    left: 2%;
+    display: flex;
+
+}
+
+
+header .signbox img {
+    height: 60px;
+    width: 70px;
+    border-radius: 30px;
+}
+
+header .signbox h4 {
+    position: relative;
+    margin-left: 5px;
+}
+
+header .signbox {
+    position: relative;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+
+}
+
+
+header nav ul li a:before,
+header nav ul li a:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #f00;
+    transition: 0.5s;
+    inset: -3px;
+}
+
+header nav ul li a:nth-child(1):before,
+header nav ul li a:nth-child(1):after {
+    background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+}
+
+header nav ul li a span {
+    position: relative;
+    top: 0;
+    padding: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.search {
+    background: url(/Images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    width: 95%;
+    height: 600px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movietype {
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.search:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0e1538;
+    z-index: -1;
+    top: 0;
+    opacity: 0.6;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-left: 40%;
+    color: white;
+}
+
+.searchbox {
+    background: transparent;
+    background-color: #0b143d;
+    height: fit-content;
+    width: fit-content;
+    border: 4px solid #0b143d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search h2 {
+    font-size: 4.5em;
+    position: relative;
+    top: 80px;
+}
+
+.search p {
+    font-size: 2em;
+}
+
+.searchbox input {
+    outline: none;
+    border-radius: 30px;
+    width: 30em;
+    height: 40px;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    background: white;
+
+
+}
+
+.searchbox img {
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+    height: 40px;
+}
+
+.movietype .head {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.movietype h2 {
+    font-size: 4.5em;
+    letter-spacing: 1px;
+    color: turquoise;
+    border-bottom: 4px solid rgb(216, 247, 79);
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+
+
+}
+
+.movietype .typebox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+
+
+}
+
+.movietype .typebox .contentbox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0e1538;
+}
+
+.movietype .typebox .contentbox:hover {
+    /* width: 500px; */
+    transform: scale(1.5);
+}
+
+.movietype .typebox .contentboxx {
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0e1538;
+}
+
+.movietype .typebox .contentbox h3,
+.movietype .typebox .contentboxx h3 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.contentbox img::before {
+    background: url(https://tenor.com/view/dean-winchester-punch-mad-angry-gif-13850258);
+}
+
+
+
+.contentbox:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.contentbox:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(20px);
+}
+
+
+.contentboxx:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.contentboxx:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(20px);
+}
+
+.contentbox:before,
+.contentbox:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+
+.contentboxx:before,
+.contentboxx:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+.contentboxx img {
+    position: relative;
+    width: 90%;
+    height: 350px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+    border: 4px solid #00bcd4;
+    border-radius: 30px;
+}
+
+.footer h1 {
+    background: -webkit-linear-gradient(45deg, #00ccff, yellow, green, #d400d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer div {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+footer address {
+    text-align: center;
+    position: relative;
+    margin-top: -15px;
+    color: white;
+}
+
+#home {
+    color: red;
+    font-size: 25px;
+}
+
+#rohan {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
